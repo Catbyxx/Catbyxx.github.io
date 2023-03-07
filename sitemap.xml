@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://catbyxx.github.io/2023/03/07/linux%25E5%2591%25BD%25E4%25BB%25A4/</loc>
+    
+    <lastmod>2023-03-07T08:14:34.062Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://catbyxx.github.io/tags/index.html</loc>
     
     <lastmod>2023-03-07T06:39:47.140Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://catbyxx.github.io/categories/index.html</loc>
     
     <lastmod>2023-03-07T06:39:47.028Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://catbyxx.github.io/2019/11/01/Hexo-Theme-Snail/</loc>
-    
-    <lastmod>2023-03-07T06:39:47.016Z</lastmod>
     
   </url>
   
