@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          Catbyxx
+          Linux常用命令 - Catbyxx
         
     </title>
 
-    <link rel="canonical" href="https://catbyxx.github.io/archives/2023/">
+    <link rel="canonical" href="https://catbyxx.github.io/2023/03/08/linux命令/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -451,8 +451,8 @@
     header.intro-header{
         
             
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/undefined')
-                /*page*/
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../../../../img/default.jpg')
+                /*post*/
             
         
     }
@@ -470,10 +470,31 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="site-heading">
-                        <h1>马可菠萝de博客</h1>
-                        <!--<hr class="small">-->
-                        <span id="subdusi" class="subheading">At the bottom of the well, it is destined to see only the sky at the wellhead. However, the starting point only affects the process of reaching your peak and does not determine the height you reach.</span>
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>Linux常用命令</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Catbyxx on
+                            2023-03-08
+                        </span>
+
+                        
+                            <div class="blank_box"></div>
+                            <span class="meta">
+                                Words <span class="post-count">348</span> and
+                                Reading Time <span class="post-count">1</span> Minutes
+                            </span>
+                            <div class="blank_box"></div>
+                            <!-- 不蒜子统计 start -->
+                            <span class="meta">
+                                Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+                            </span>
+                            <!-- 不蒜子统计 end -->
+                        
+
                     </div>
                 
 
@@ -592,249 +613,172 @@
 
 
     <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+    <!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-    <!-- Post Container -->
+            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-                
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- 归档列表 -->
-            
-            
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-             <!-- 归档列表 -->
+                <h2 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h2><h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> tar -xvf pack.tar</span><br><span class="line"> tar zxvf agb.tar.gz</span><br></pre></td></tr></table></figure>
+<h4 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查找包含的文件名</span></span><br><span class="line">find / -name jasoncpp 2&gt;/dev/null</span><br><span class="line"><span class="comment">#查找包含字符串的文件</span></span><br><span class="line">find . | xargs grep string 2&gt;/dev/null</span><br></pre></td></tr></table></figure>
+<h4 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br><span class="line">docker ps -a</span><br><span class="line">docker attach/start/rm id</span><br><span class="line"></span><br><span class="line">docker run -d -p 3443:3443 --restart=unless-stopped --name=acunetix_web quay.io/hiepnv/acunetix</span><br><span class="line"><span class="comment">#构建镜像</span></span><br><span class="line">sudo docker commit 5c95f8fafa7d sliver</span><br></pre></td></tr></table></figure>
+<h4 id="账户管理"><a href="#账户管理" class="headerlink" title="账户管理"></a>账户管理</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo useradd -r -m -s /bin/bash junwei</span><br><span class="line">sudo usermod -aG sudo junwei</span><br></pre></td></tr></table></figure>
+<h4 id="Conda"><a href="#Conda" class="headerlink" title="Conda"></a>Conda</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">conda env list</span><br><span class="line">conda create --name py310 python=3.10</span><br><span class="line">conda activate your-env</span><br><span class="line">conda deactivate</span><br><span class="line">conda remove --name ENVNAME --all</span><br></pre></td></tr></table></figure>
+<h4 id="终端快捷键"><a href="#终端快捷键" class="headerlink" title="终端快捷键"></a>终端快捷键</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">清除当前行：ctrl + u</span><br><span class="line">到行首：ctrl + a</span><br><span class="line">到行尾：ctrl + e</span><br><span class="line">搜索命令历史：ctrl + r</span><br><span class="line">删除到文本末尾：ctrl + k</span><br><span class="line">输入开头命令后 按 ⌘ + ; 会自动列出输入过的命令</span><br><span class="line">⌘ + shift + h 会列出剪切板历史</span><br></pre></td></tr></table></figure>
+<h4 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看端口开放</span></span><br><span class="line">netstat -tunlp</span><br><span class="line"><span class="comment">#查看端口占用</span></span><br><span class="line">lsof -i:6666</span><br></pre></td></tr></table></figure>
+<h4 id="切换语言版本"><a href="#切换语言版本" class="headerlink" title="切换语言版本"></a>切换语言版本</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --config python</span><br></pre></td></tr></table></figure>
+<h4 id="Curl发包"><a href="#Curl发包" class="headerlink" title="Curl发包"></a>Curl发包</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --header &quot;X-Consul-Token: bb03b43b-1d81-d62b-24b5-39540ee469b5&quot; --request PUT -d &#39;&#123;&quot;ID&quot;: &quot;meow&quot;, &quot;Name&quot;: &quot;meow&quot;, &quot;Address&quot;: &quot;127.0.0.1&quot;, &quot;Port&quot;: 80, &quot;check&quot;: &#123;&quot;Args&quot;: [&quot;&#x2F;tmp&#x2F;test&quot;], &quot;interval&quot;: &quot;10s&quot;, &quot;timeout&quot;: &quot;1s&quot;&#125;&#125;&#39; http:&#x2F;&#x2F;127.0.0.1:8500&#x2F;v1&#x2F;agent&#x2F;service&#x2F;register</span><br></pre></td></tr></table></figure>
+<h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git show</span><br><span class="line">git dif</span><br><span class="line">https:&#x2F;&#x2F;portal.zhejianglab.com&#x2F;portal&#x2F;employee&#x2F;001005</span><br><span class="line"></span><br><span class="line">https:&#x2F;&#x2F;portal.zhejianglab.com&#x2F;file&#x2F;zjlab-humanface&#x2F;upload&#x2F;uploadImg&#x2F;000646.jpg</span><br></pre></td></tr></table></figure>
+<h4 id="编译缺少头文件"><a href="#编译缺少头文件" class="headerlink" title="编译缺少头文件"></a>编译缺少头文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-file search rpc/rpc.h</span><br></pre></td></tr></table></figure>
 
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2023">
-                    <span class="tag-text">2023</span>
-                </span>
-                <ul>
                 
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    03-08
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2023/03/08/linux命令/" style="color: #0085a1">
-                        <span>
-                            Linux常用命令
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
                 </ul>
+
+                <!-- tip start -->
+                
+
+                
+                <div class="comment_notes">
+                    <p>
+                        This is copyright.
+                    </p>
+                </div>
+                
+                <!-- tip end -->
+
+                <!-- Music start-->
+                
+                <!-- Music end -->
+
+                <!-- Sharing -->
+                
+                <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                <!--  css & js -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!-- Sharing -->
+
+                <!-- gitment start -->
+                
+                <!-- gitment end -->
+
+                <!-- 来必力City版安装代码 -->
+                
+                <!-- City版安装代码已完成 -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
             </div>
             
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
 
+    
+      
+        <aside id="sidebar">
+          <div id="toc" class="toc-article">
+          <strong class="toc-title">Contents</strong>
+          
+            
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Linux常用命令"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Linux常用命令</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#解压"><span class="toc-nav-number">1.0.1.</span> <span class="toc-nav-text">解压</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#查找"><span class="toc-nav-number">1.0.2.</span> <span class="toc-nav-text">查找</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#docker"><span class="toc-nav-number">1.0.3.</span> <span class="toc-nav-text">docker</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#账户管理"><span class="toc-nav-number">1.0.4.</span> <span class="toc-nav-text">账户管理</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Conda"><span class="toc-nav-number">1.0.5.</span> <span class="toc-nav-text">Conda</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#终端快捷键"><span class="toc-nav-number">1.0.6.</span> <span class="toc-nav-text">终端快捷键</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#网络"><span class="toc-nav-number">1.0.7.</span> <span class="toc-nav-text">网络</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#切换语言版本"><span class="toc-nav-number">1.0.8.</span> <span class="toc-nav-text">切换语言版本</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Curl发包"><span class="toc-nav-number">1.0.9.</span> <span class="toc-nav-text">Curl发包</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Git"><span class="toc-nav-number">1.0.10.</span> <span class="toc-nav-text">Git</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#编译缺少头文件"><span class="toc-nav-number">1.0.11.</span> <span class="toc-nav-text">编译缺少头文件</span></a></li></ol></li></ol></li></ol>
+            
+          
+          </div>
+        </aside>
+      
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://blog.csdn.net/d_Nail" target="_blank">Author&#39;s Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Author&#39;s Web</a></li>
+                    
+                        <li><a href="https://github.com/dusign" target="_blank">Author&#39;s Github</a></li>
+                    
+                        <li><a href="#" target="_blank">Other</a></li>
+                    
+                </ul>
+                
+            </div>
         </div>
     </div>
-</div>
-            </div>
+</article>
 
-            <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        
-<!--
-<h5>SEARCH</h5>
-<div class="search-article" class="tags">
-	<input id="search-kw" type="text" name="search_article" placeholder="Enter keywords for search" />
-	<div class="search-img">
-		<img 
-			src="/img/search.png" 
-			alt="search" 
-			onMouseOver="this.src='/img/search-focus.png'" 
-			onMouseOut="this.src='/img/search.png'"/>
-	</div>
-</div>-->
 
-<h5>SEARCH</h5>
-<div id="site_search">
-	<div class="form-group">
-		<input type="text" id="local-search-input" name="q" results="0" placeholder="search" class="st-search-input st-default-search-input form-control"/>
-	</div>  
-	<div id="local-search-result"></div>
-</div>
 
-        <hr>
-    
-        <!-- Featured Tags -->
 
-<section>
-    <!-- no hr -->
-    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-    <div class="tags">
-        
-    </div>
-</section>
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
 
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">ABOUT ME</a></h5>
-    <div class="short-about">
 
-        
-            <img id = "avatar_pic" src="/img/ironman-draw.png" />
-        
+<style  type="text/css">
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
-        
-            <p>Welcome to visit, I&#39;m  catbyxx!</p>
-        
-
-        <!-- SNS Link -->
-        <ul class="list-inline">
-
-            
-                <li>
-                    <a target="_blank"  href="https://github.com/catbyxx">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-                <li>
-                    <a target="_blank" href="https://twitter.com/chunmomo0127">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/Cosplay Anime Manga VN">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-                <li>
-                    <a target="_blank" href="https://www.zhihu.com/people/96-96-25-20">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa  fa-stack-1x fa-inverse">知</i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-
-            
-
-            
-
-        </ul>
-    </div>
-</section>
-        <hr>
-    
-        
-  <h5>VISITORS</h5>
-  <div class="widget">
-    <span>
-    	Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-	</span>
-	<br/>
-	<span>
-		<b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-	</span>
-  </div>
-
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h5>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/2023/03/08/linux%E5%91%BD%E4%BB%A4/">Linux常用命令</a>
-        </li>
-      
-    </ul>
-  </div>
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<h5>FRIENDS</h5>
-<ul class="list-inline">
-
-    
-        <li><a href="https://blog.csdn.net/d_Nail" target="_blank">Author&#39;s Blog</a></li>
-    
-        <li><a href="#" target="_blank">Author&#39;s Web</a></li>
-    
-        <li><a href="https://github.com/dusign" target="_blank">Author&#39;s Github</a></li>
-    
-        <li><a href="#" target="_blank">Other</a></li>
-    
-</ul>
-
-        <hr>
-    
-        
-    <h5>ARCHIVES</h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">三月 2023</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-
-        <hr>
-    
-        <!-- Categories -->
-
-    <h5>categories</h5>
-    <div class="widget">
-      <ul>
-        
-          <a href="categories/#Blog"><li>Blog</li></a>
-        
-      </ul>
-    </div>
-
-        <hr>
-    
-</div>
-
-        
-    </div>
-</div>
 
 
     <!-- Footer -->
